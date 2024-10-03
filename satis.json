@@ -1,0 +1,25 @@
+{
+    "name": "drazulay/satis-packages",
+    "homepage": "https://satis-packages.test/",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:drazulay/magento2-base.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:drazulay/magento2-module-googlesheetsimporter.git"
+        }
+    ],
+    "require-all": true,
+    "archive": {
+        "directory": "repo",
+        "format": "tar",
+        "skip-dev": true,
+        "whitelist": [
+            "solidbase/magento2-module-googlesheetsimporter",
+            "solidbase/magento2-base"
+        ]
+    },
+    "require-dependencies": true
+}
